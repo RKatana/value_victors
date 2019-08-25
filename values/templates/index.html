@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Value victors</title>
+</head>
+<body>
+   <h1>Hello world</h1>
+   <h2>{%for val in value%} </h2>
+      
+      <h2>{{val.name}}: Has {{val.moringa_values.count}} values {%for v in val.moringa_values.all%} </h2>
+      <p>{{v}} </p>
+      {%endfor%}
+      {%empty%}
+      <p>No values</p>
+      {%endfor%}
+</body>
+</html>
